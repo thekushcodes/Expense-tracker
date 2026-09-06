@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spendly — Expense Tracker</title>
+
+    <link rel="stylesheet" href="expense.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.10.53/build/spline-viewer.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="#hero" class="logo">
+            <span class="logo-mark">₹</span>
+            <span class="logo-text">Spendly</span>
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#how-it-works">
+                How it works
+            </a>
+
+            <a href="#product-preview">
+                Product
+            </a>
+
+            <a href="#insights">
+                Insights
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button class="login-link" id="loginButton">
+                Log in
+            </button>
+
+            <a href="#" class="nav-cta" id="getStartedButton">Get Started</a>
+
+        </div>
+
+
+        <button class="menu-button" aria-label="Open menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         PAGE
+    ========================== -->
+
+    <main class="snap-container">
+
+<section class="hero snap-section" id="hero">
+
+            <div class="spline-background">
+                <spline-viewer url="https://prod.spline.design/122KOifnq-k7npA0/scene.splinecode">
+                </spline-viewer>
+            </div>
+
+            <div class="hero-overlay"></div>
+            <div class="top-mask"></div>
+            <div class="bottom-mask"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SMARTER MONEY MANAGEMENT
+                </p>
+
+                <h1>
+                    Make Every <span>Rupee Count.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Track your expenses, understand your spending,
+                    and take control of your financial future.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#" class="primary-button" id="heroGetStarted">
+                        Start Tracking
+                        <span>→</span>
+                    </a>
+
+                    <a href="#features" class="secondary-button">
+                        Explore Spendly
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+
+        </section>
+
+<!-- ==================================================
+             FEATURES
+        ================================================== -->
+        <section class="landing-section features-section snap-section" id="features">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <p class="section-label">EVERYTHING IN ONE PLACE</p>
+                    <h2>Built to make <span>money simpler.</span></h2>
+                    <p class="section-description">
+                        Track spending, understand categories, stay inside your limits,
+                        and turn everyday transactions into useful financial signals.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card feature-large">
+                        <div class="feature-content">
+                            <span class="feature-number">01</span>
+                            <h3>Track every expense</h3>
+                            <p>
+                                Keep your daily spending history in one clean timeline,
+                                with the merchant, category, date, and amount always visible.
+                            </p>
+                        </div>
+
+                        <div class="mini-transactions">
+                            <div class="mini-transaction">
+                                <div class="transaction-avatar">☕</div>
+                                <div>
+                                    <strong>Coffee</strong>
+                                    <small>Food &amp; Drinks · Today</small>
+                                </div>
+                                <b>− ₹180</b>
+                            </div>
+                            <div class="mini-transaction">
+                                <div class="transaction-avatar">🛒</div>
+                                <div>
+                                    <strong>Groceries</strong>
+                                    <small>Shopping · Yesterday</small>
+                                </div>
+                                <b>− ₹1,240</b>
+                            </div>
+                            <div class="mini-transaction">
+                                <div class="transaction-avatar">🚕</div>
+                                <div>
+                                    <strong>Uber</strong>
+                                    <small>Transport · Yesterday</small>
+                                </div>
+                                <b>− ₹320</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-number">02</span>
+                        <div class="feature-icon">◔</div>
+                        <h3>Smart categories</h3>
+                        <p>
+                            See which parts of your lifestyle are taking the biggest
+                            share of your monthly spend.
+                        </p>
+                        <div class="category-bars">
+                            <div class="category-row">
+                                <span>Food</span>
+                                <div class="category-bar"><i style="width:78%;"></i></div>
+                                <b>32%</b>
+                            </div>
+                            <div class="category-row">
+                                <span>Shopping</span>
+                                <div class="category-bar"><i style="width:52%;"></i></div>
+                                <b>21%</b>
+                            </div>
+                            <div class="category-row">
+                                <span>Transport</span>
+                                <div class="category-bar"><i style="width:38%;"></i></div>
+                                <b>15%</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-number">03</span>
+                        <div class="feature-icon">₹</div>
+                        <h3>Set smarter budgets</h3>
+                        <p>
+                            Give every important category a limit and know what is
+                            available before you make the next purchase.
+                        </p>
+                        <div class="budget-preview">
+                            <div class="budget-top">
+                                <span>Monthly budget</span>
+                                <strong>₹30,000</strong>
+                            </div>
+                            <div class="budget-progress"><span></span></div>
+                            <div class="budget-bottom">
+                                <small>₹21,450 spent</small>
+                                <small>₹8,550 left</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card feature-wide">
+                        <div class="feature-wide-copy">
+                            <span class="feature-number">04</span>
+                            <h3>Meaningful insights</h3>
+                            <p>
+                                Go beyond recording transactions. Spot changes in
+                                spending, compare months, and find practical places
+                                to save.
+                            </p>
+                        </div>
+
+                        <div class="insight-card">
+                            <div class="insight-label">THIS MONTH</div>
+                            <div class="insight-value">₹8,550</div>
+                            <div class="insight-change">
+                                <span>↓ 12.4%</span> less than last month
+                            </div>
+                            <div class="insight-chart">
+                                <span style="height:35%;"></span>
+                                <span style="height:50%;"></span>
+                                <span style="height:42%;"></span>
+                                <span style="height:65%;"></span>
+                                <span style="height:55%;"></span>
+                                <span style="height:78%;"></span>
+                                <span style="height:62%;"></span>
+                                <span style="height:88%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             HOW IT WORKS
+        ================================================== -->
+        <section class="landing-section how-section snap-section" id="how-it-works">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <p class="section-label">HOW IT WORKS</p>
+                    <h2>From spending to <span>clarity in minutes.</span></h2>
+                    <p class="section-description">
+                        Spendly keeps the workflow simple: record what happened,
+                        organize it, then use the pattern to make the next decision better.
+                    </p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-line"></div>
+                        <h3>Add your expenses</h3>
+                        <p>
+                            Log the amount, merchant, category, and date while the
+                            purchase is still fresh.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-line"></div>
+                        <h3>Organize your money</h3>
+                        <p>
+                            Group transactions into useful categories and set budgets
+                            around the spending that matters to you.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-line"></div>
+                        <h3>Understand your habits</h3>
+                        <p>
+                            Compare categories and months to see what changed and
+                            where a small adjustment could have the biggest effect.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flow-visual">
+                    <div class="flow-pill">Add</div>
+                    <span>→</span>
+                    <div class="flow-pill">Organize</div>
+                    <span>→</span>
+                    <div class="flow-pill">Understand</div>
+                    <span>→</span>
+                    <div class="flow-pill active">Improve</div>
+                </div>
+
+                <div class="how-metrics">
+                    <div>
+                        <strong>₹30,000</strong>
+                        <span>monthly budget</span>
+                    </div>
+                    <div>
+                        <strong>71%</strong>
+                        <span>budget used</span>
+                    </div>
+                    <div>
+                        <strong>₹8,550</strong>
+                        <span>available to spend</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PRODUCT
+        ================================================== -->
+        <section class="landing-section preview-section snap-section" id="product-preview">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <p class="section-label">YOUR MONEY, VISUALIZED</p>
+                    <h2>See the bigger <span>financial picture.</span></h2>
+                    <p class="section-description">
+                        One focused dashboard for balances, spending trends, budgets,
+                        and the categories that deserve your attention.
+                    </p>
+                </div>
+
+                <div class="dashboard-preview">
+                    <div class="preview-sidebar">
+                        <div class="preview-brand">
+                            <span>₹</span>
+                            Spendly
+                        </div>
+                        <div class="preview-menu">
+                            <div class="preview-menu-item active"><span>⌂</span>Overview</div>
+                            <div class="preview-menu-item"><span>↕</span>Transactions</div>
+                            <div class="preview-menu-item"><span>◷</span>Budgets</div>
+                            <div class="preview-menu-item"><span>◔</span>Analytics</div>
+                        </div>
+                    </div>
+
+                    <div class="preview-main">
+                        <div class="preview-topbar">
+                            <div>
+                                <small>GOOD MORNING</small>
+                                <h3>Your financial overview</h3>
+                            </div>
+                            <div class="preview-avatar">A</div>
+                        </div>
+
+                        <div class="preview-stats">
+                            <div class="preview-stat">
+                                <small>Total balance</small>
+                                <strong>₹84,520</strong>
+                                <span class="positive">↑ 8.2%</span>
+                            </div>
+                            <div class="preview-stat">
+                                <small>This month</small>
+                                <strong>₹21,450</strong>
+                                <span>spent</span>
+                            </div>
+                            <div class="preview-stat">
+                                <small>Budget left</small>
+                                <strong>₹8,550</strong>
+                                <span class="positive">on track</span>
+                            </div>
+                        </div>
+
+                        <div class="preview-bottom">
+                            <div class="preview-chart-card">
+                                <div class="preview-card-header">
+                                    <div>
+                                        <small>SPENDING OVERVIEW</small>
+                                        <h4>₹21,450</h4>
+                                    </div>
+                                    <span>This month</span>
+                                </div>
+
+                                <div class="large-chart">
+                                    <div class="chart-grid-line"></div>
+                                    <div class="chart-grid-line"></div>
+                                    <div class="chart-grid-line"></div>
+                                    <svg viewBox="0 0 500 180" preserveAspectRatio="none" class="chart-svg" aria-label="Monthly spending trend">
+                                        <path d="M0,145 C45,125 65,140 105,105 C145,70 170,115 210,92 C250,69 275,85 315,50 C355,15 380,65 415,45 C450,25 470,45 500,15"></path>
+                                        <circle cx="415" cy="45" r="5"></circle>
+                                    </svg>
+                                </div>
+
+                                <div class="chart-labels">
+                                    <span>1</span><span>7</span><span>14</span><span>21</span><span>30</span>
+                                </div>
+                            </div>
+
+                            <div class="preview-spending-card">
+                                <small>TOP CATEGORIES</small>
+
+                                <div class="spending-category">
+                                    <div class="spending-category-top">
+                                        <span>Food</span><b>₹6,850</b>
+                                    </div>
+                                    <div class="spending-progress"><span style="width:78%;"></span></div>
+                                </div>
+
+                                <div class="spending-category">
+                                    <div class="spending-category-top">
+                                        <span>Shopping</span><b>₹4,420</b>
+                                    </div>
+                                    <div class="spending-progress"><span style="width:54%;"></span></div>
+                                </div>
+
+                                <div class="spending-category">
+                                    <div class="spending-category-top">
+                                        <span>Transport</span><b>₹3,120</b>
+                                    </div>
+                                    <div class="spending-progress"><span style="width:39%;"></span></div>
+                                </div>
+
+                                <div class="preview-mini-status">
+                                    <span>Budget health</span>
+                                    <strong>On track · 71%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             INSIGHTS
+        ================================================== -->
+        <section class="landing-section insights-section snap-section" id="insights">
+            <div class="section-inner">
+                <div class="insights-layout">
+                    <div class="insights-copy">
+                        <p class="section-label">BETTER EVERY MONTH</p>
+                        <h2>Your spending tells <span>a story.</span></h2>
+                        <p class="section-description">
+                            Spendly turns your transaction history into useful signals:
+                            what is rising, what is falling, and where your budget has room.
+                        </p>
+
+                        <div class="insight-points">
+                            <div class="insight-point">
+                                <span>01</span>
+                                <div>
+                                    <h3>Spot spending patterns</h3>
+                                    <p>Know when and where you spend the most.</p>
+                                </div>
+                            </div>
+                            <div class="insight-point">
+                                <span>02</span>
+                                <div>
+                                    <h3>Find opportunities to save</h3>
+                                    <p>Focus on categories where small changes can matter.</p>
+                                </div>
+                            </div>
+                            <div class="insight-point">
+                                <span>03</span>
+                                <div>
+                                    <h3>Build better habits</h3>
+                                    <p>Compare progress month over month instead of guessing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="insight-table-wrap">
+                            <div class="insight-table-heading">
+                                <span>MONTHLY SNAPSHOT</span>
+                                <b>vs. last month</b>
+                            </div>
+                            <div class="insight-table">
+                                <div class="insight-table-row insight-table-head">
+                                    <span>Category</span>
+                                    <span>This month</span>
+                                    <span>Change</span>
+                                </div>
+                                <div class="insight-table-row">
+                                    <span>Food</span>
+                                    <strong>₹6,850</strong>
+                                    <em>↓ 18%</em>
+                                </div>
+                                <div class="insight-table-row">
+                                    <span>Shopping</span>
+                                    <strong>₹4,420</strong>
+                                    <em>↓ 6%</em>
+                                </div>
+                                <div class="insight-table-row">
+                                    <span>Transport</span>
+                                    <strong>₹3,120</strong>
+                                    <em>↑ 4%</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="insights-visual">
+                        <div class="insight-orb"></div>
+
+                        <div class="floating-insight-card card-one">
+                            <small>FOOD SPENDING</small>
+                            <strong>₹6,850</strong>
+                            <span>↓ 18% this month</span>
+                        </div>
+
+                        <div class="floating-insight-card card-two">
+                            <small>MONTHLY SAVINGS</small>
+                            <strong>₹8,550</strong>
+                            <span>↑ 12.4%</span>
+                        </div>
+
+                        <div class="floating-insight-card card-three">
+                            <small>BUDGET STATUS</small>
+                            <strong>On track</strong>
+                            <span>71% used</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         LOGIN MODAL
+    ================================================== -->
+
+    <div class="login-modal" id="loginModal" aria-hidden="true">
+
+        <!-- BACKDROP -->
+
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+
+
+        <!-- GLASS CARD -->
+
+        <div class="login-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+
+            <!-- CLOSE BUTTON -->
+
+            <button class="modal-close" id="closeLogin" aria-label="Close login">
+                ×
+            </button>
+
+
+            <!-- LOGIN HEADER -->
+
+            <div class="login-header">
+
+                <div class="login-icon">
+                    ₹
+                </div>
+
+                <h2 id="loginTitle">
+                    Welcome back
+                </h2>
+
+                <p>
+                    Log in to continue managing your money.
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <form class="login-form" id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" id="email" placeholder="you@example.com" required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <div class="password-label">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <input type="password" id="password" placeholder="Enter your password" required>
+
+                </div>
+
+
+                <button type="submit" class="login-submit">
+                    Log in
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <!-- DIVIDER -->
+
+            <div class="login-divider">
+
+                <span>or</span>
+
+            </div>
+
+
+            <!-- SIGN UP -->
+
+            <p class="signup-text">
+
+                Don't have an account?
+
+                <a href="#" id="createAccountButton">Create one</a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ================================
+     SIGNUP MODAL
+    ================================ -->
+
+    <div class="login-modal" id="signupModal" aria-hidden="true">
+
+        <div class="modal-backdrop" id="signupBackdrop"></div>
+
+        <div class="login-card signup-card" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+
+            <button class="modal-close" id="closeSignup" aria-label="Close signup">
+                ×
+            </button>
+
+            <div class="login-header">
+
+                <div class="login-icon">₹</div>
+
+                <h2 id="signupTitle">
+                    Create your account
+                </h2>
+
+                <p>
+                    Start taking control of your money today.
+                </p>
+
+            </div>
+
+
+            <form class="login-form" id="signupForm">
+
+                <div class="input-group">
+
+                    <label for="signupName">
+                        Name
+                    </label>
+
+                    <input type="text" id="signupName" placeholder="Your name" required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="signupEmail">
+                        Email
+                    </label>
+
+                    <input type="email" id="signupEmail" placeholder="you@example.com" required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="signupPassword">
+                        Password
+                    </label>
+
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+
+                </div>
+
+
+                <button type="submit" class="login-submit">
+                    Create account
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <div class="login-divider">
+                <span>or</span>
+            </div>
+
+
+            <p class="signup-text">
+                Already have an account?
+
+                <a href="#" id="switchToLogin">
+                    Log in
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="expense.js"></script>
+
+</body>
+
+</html>
