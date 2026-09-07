@@ -76,7 +76,7 @@
 
     <main class="snap-container">
 
-<section class="hero snap-section" id="hero">
+        <section class="hero snap-section" id="hero">
 
             <div class="spline-background">
                 <spline-viewer url="https://prod.spline.design/122KOifnq-k7npA0/scene.splinecode">
@@ -124,7 +124,7 @@
 
         </section>
 
-<!-- ==================================================
+        <!-- ==================================================
              FEATURES
         ================================================== -->
         <section class="landing-section features-section snap-section" id="features">
@@ -400,8 +400,11 @@
                                     <div class="chart-grid-line"></div>
                                     <div class="chart-grid-line"></div>
                                     <div class="chart-grid-line"></div>
-                                    <svg viewBox="0 0 500 180" preserveAspectRatio="none" class="chart-svg" aria-label="Monthly spending trend">
-                                        <path d="M0,145 C45,125 65,140 105,105 C145,70 170,115 210,92 C250,69 275,85 315,50 C355,15 380,65 415,45 C450,25 470,45 500,15"></path>
+                                    <svg viewBox="0 0 500 180" preserveAspectRatio="none" class="chart-svg"
+                                        aria-label="Monthly spending trend">
+                                        <path
+                                            d="M0,145 C45,125 65,140 105,105 C145,70 170,115 210,92 C250,69 275,85 315,50 C355,15 380,65 415,45 C450,25 470,45 500,15">
+                                        </path>
                                         <circle cx="415" cy="45" r="5"></circle>
                                     </svg>
                                 </div>
@@ -738,8 +741,9 @@
     </div>
 
 
-    <script src="landingPage/expense.js"></script>
+    <script type="module" src="landingPage/expense.js"></script>
 
+    <script type="module" src="auth/auth.js"></script>
 </body>
 
 </html>
